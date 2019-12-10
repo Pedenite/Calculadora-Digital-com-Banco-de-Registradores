@@ -1,0 +1,12 @@
+module erro (
+	input ov,
+	input [6..0] rd0, rd1, rd2, rd3,
+	output [6..0] d0, d1, d2, d3
+);
+
+d3=(ov==0)?rd3:~7'b1111001;
+d2=~7'b1010000;
+d1=~7'b1010000;
+d0=~7'b1011100;
+
+endmodule

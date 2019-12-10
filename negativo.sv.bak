@@ -1,0 +1,8 @@
+module negativo(
+	input neg,
+	output [6:0] disp
+)
+
+assign disp = ~7'b0111111;
+
+endmodule

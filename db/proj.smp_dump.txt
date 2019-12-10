@@ -1,0 +1,19 @@
+
+State Machine - |proj|ControlaOperacao:inst6|state
+Name state.ERRO state.LOAD_SUB state.LOAD_SOMA state.LOAD_A state.STORE_RES_SUB state.STORE_RES_SOMA state.STORE_A state.SUBTRACAO state.SOMA state.RESULT_SUB state.RESULT_SOMA state.INICIAL_SUB state.INICIAL_SOMA state.INICIAL_B state.INICIAL_A state.INICIAL 
+state.INICIAL 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.INICIAL_A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.INICIAL_B 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.INICIAL_SOMA 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.INICIAL_SUB 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.RESULT_SOMA 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.RESULT_SUB 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.SOMA 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.SUBTRACAO 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.STORE_A 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.STORE_RES_SOMA 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.STORE_RES_SUB 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.LOAD_A 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.LOAD_SOMA 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.LOAD_SUB 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.ERRO 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 

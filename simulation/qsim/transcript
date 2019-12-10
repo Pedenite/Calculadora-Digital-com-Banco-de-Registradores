@@ -1,0 +1,12 @@
+# do proj.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module \Bin-BCD 
+# 
+# Top level modules:
+# 	\Bin-BCD 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# ** Error: proj.vt(29): near "-": syntax error, unexpected '-', expecting import or ';' or '#' or '('
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro ./proj.do line 4

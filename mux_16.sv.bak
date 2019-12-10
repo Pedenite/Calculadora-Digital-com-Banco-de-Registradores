@@ -1,0 +1,8 @@
+module mux16(
+	input [15:0] Dado,
+	input [3:0] Escolha,
+	output Saida
+);
+assign Saida = Dado[Escolha];
+
+endmodule

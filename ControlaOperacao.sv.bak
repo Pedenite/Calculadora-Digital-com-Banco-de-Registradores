@@ -1,0 +1,56 @@
+module ControlaOperacao(
+	input clk,
+	input reset,
+	input [3:0] tecla,
+	output [3:0] valorA,
+	output [3:0] valorB,
+	output Cin,
+	output we
+);
+
+	typedef enum logic [2:0] {INICIAL, SOMA, SUBTRACAO, STORE, LOAD, RESULT} statetype;
+	statetype state, nextstate;
+
+	always_ff @(posedge clk, posedge reset)
+		if (reset) state <= INICIAL;
+		else state <= nextstate;
+	
+	always_comb
+		case (state)
+
+			INICIAL:		begin 
+									la = 0; 
+									lv = 0;
+						 		end	
+
+			 SOMA:		begin 
+									la = 1; 
+									lv = 1;
+						   		end
+			
+			 SUBTRACAO:	begin 
+									la = 0; 
+									lv = 1;
+								end	 
+
+			 STORE:  		begin 
+									la = 1; 
+									lv = 0;
+								end	
+			
+			LOAD:  			begin 
+									la = 0; 
+									lv = 0;
+								end	
+			
+			RESULT:  			begin 
+									la = 0; 
+									lv = 0;
+								end	
+								
+			default:  			begin 
+									la = 0; 
+									lv = 0;
+								end	
+
+		endcase
